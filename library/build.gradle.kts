@@ -32,7 +32,7 @@ kotlin {
     wasmJs {
         browser()
     }
-    
+
     applyDefaultHierarchyTemplate {
         common {
             group("jvm") {
@@ -67,7 +67,7 @@ mavenPublishing {
     coordinates("dev.toastbits.kanakt", "kanakt", "0.0.1")
 
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
-    signAllPublications()
+    // signAllPublications()
 
     configure(KotlinMultiplatform(
         javadocJar = JavadocJar.Dokka("dokkaHtml"),
